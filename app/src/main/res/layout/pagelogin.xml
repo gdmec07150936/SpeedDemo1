@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="50px"
+        >
+
+        <TextView android:layout_width="80.0dip"
+            android:layout_height="wrap_content"
+            android:text="用户名："
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="2.0dip"
+            android:textSize="40px"
+            />
+
+        <EditText android:id="@+id/value"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_width="250dip"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px">
+
+
+        <TextView android:layout_width="80.0dip"
+            android:layout_height="wrap_content"
+            android:text="密码："
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="2.0dip"
+            android:textSize="40px"
+            />
+
+        <EditText android:id="@+id/value2"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_width="250dip"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20px">
+
+        <RadioButton
+            android:text="司机"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dip"
+            android:id="@+id/rb1" />
+
+        <RadioButton
+            android:text="用户"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/my_body1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/find1"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:layout_width="300dip"
+            android:layout_gravity="center"
+            android:layout_margin="10px"
+            android:background="#66FFFF"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30px"
+        android:layout_weight="0.03">
+        <TextView
+            android:text="忘记密码"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:textSize="30px"
+            android:layout_marginLeft="100dip"
+            android:textColor="#66FFFF"/>
+
+        <TextView
+            android:text="使用其他方式登录"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textSize="30px"
+            android:textColor="#66FFFF"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dip"
+        android:layout_weight="0.03">
+
+        <TextView
+            android:text="还没帐号去注册吧>>>"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textSize="30px"
+            android:layout_marginLeft="120dip"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+

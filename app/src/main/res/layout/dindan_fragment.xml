@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include layout="@layout/dindan_hert"></include>
+
+    <LinearLayout
+
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:id="@+id/dindan_hert_all"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="全部"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:id="@+id/dindan_hert_all_view"
+                android:layout_marginTop="4dp"
+                android:background="@color/login_in"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"></View>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dindan_hert_state"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="进行中"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:id="@+id/dindan_hert_state_view"
+                android:layout_marginTop="4dp"
+                android:background="@color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"></View>
+        </LinearLayout>
+
+        <LinearLayout
+        android:id="@+id/dindan_hert_finish"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="已完成"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:id="@+id/dindan_hert_finish_view"
+            android:layout_marginTop="4dp"
+            android:background="@color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"></View>
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/dindan_hert_cancel"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="取消/过期"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:id="@+id/dindan_hert_cancel_view"
+                android:layout_marginTop="4dp"
+                android:background="@color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"></View>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+    <com.example.administrator.speeddemo.mView.ReFlashListView
+        android:divider="@android:color/transparent"
+        android:dividerHeight="15dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:id="@+id/dindan_ListView"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></com.example.administrator.speeddemo.mView.ReFlashListView>
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@color/backgroundColor"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <include layout="@layout/list_dindan"></include>
+    <include layout="@layout/list_dindan"></include>
+    <include layout="@layout/list_dindan"></include>
+        <include layout="@layout/list_dindan"></include>
+    </LinearLayout>
+    </ScrollView>-->
+
+</LinearLayout>

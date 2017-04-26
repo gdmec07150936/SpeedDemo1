@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_blue">#8CC810</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="my_transparent">#88ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="bottom">#191919</color>
+    <color name="black">#323232</color>
+    <color name="blue">#3490E5</color>
+    <color name="black1">#000</color>
+    <color name="logbackground">#f6fafb</color>
+    <color name="logButton">#1dbaf1</color>
+    <color name="backgroundView">#F5FBFB</color>
+    <color name="light_red">#ff4831</color>
+    <color name="tick_in_color">#FF6A7D</color>
+    <color name="cancle">#bfbfbf</color>
+</resources>

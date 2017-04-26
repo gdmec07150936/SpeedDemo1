@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/list_dindan"
+    >
+
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"
+            android:text="等待司机接单中........."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_marginTop="5dp"
+        android:background="@color/backgroundColor"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"></View>-->
+    <!--<RelativeLayout
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/Car_Image"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/Car_Image"
+            android:layout_marginLeft="28dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_centerVertical="true"
+            >
+            <TextView
+                android:textSize="18sp"
+                android:text="宝马 / x3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="卢A**456"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageButton
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:src="@drawable/call_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>-->
+    <LinearLayout
+        android:id="@+id/list_tow"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--<View
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/backgroundColor"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"></View>-->
+        <LinearLayout
+            android:id="@+id/list_one"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/date_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/dindan_list_date"
+                android:text="2017/04/22  16:22"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_marginLeft="50dp"
+            android:background="@color/backgroundColor"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+
+    <EditText
+        android:id="@+id/dindan_list_prick_in_text"
+        android:textSize="14sp"
+        android:editable="false"
+        android:paddingLeft="15dp"
+        android:drawablePadding="15dp"
+        android:textColorHint="@color/login_up"
+        android:drawableLeft="@drawable/biaoji_blue"
+        android:textColor="@color/login_up"
+        android:hint="广州市白云区钟落潭镇广东机电职业技术学院"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <View
+            android:layout_marginLeft="50dp"
+            android:background="@color/backgroundColor"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+
+    <EditText
+        android:id="@+id/dindan_list_prickup_text"
+        android:textSize="14sp"
+        android:editable="false"
+        android:paddingLeft="15dp"
+        android:drawablePadding="15dp"
+        android:textColorHint="@color/orange"
+        android:drawableLeft="@drawable/biaoji_orgent"
+        android:textColor="@color/orange"
+        android:hint="广州市白云区钟落潭镇广东机电职业技术学院"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <View
+            android:layout_marginBottom="10dp"
+            android:background="@color/backgroundColor"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_tow"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/dindan_list_price"
+            android:layout_marginLeft="15dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="约￥35.00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:paddingBottom="10dp"
+            android:id="@+id/dindan_list_state"
+            android:layout_marginRight="14dp"
+            android:textSize="16sp"
+            android:textColor="@color/login_in"
+            android:text="等待接单中......"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="14dp" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/dindan_list_state_image"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/dindan_title"
+        android:layout_width="70dp"
+        android:layout_height="70dp" />
+
+</RelativeLayout>

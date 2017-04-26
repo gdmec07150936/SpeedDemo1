@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:textColor="@color/login_in"
+        android:textSize="16sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:textColorHint="#8bd2f7"
+        android:hint="手机号/会员名/邮箱"
+        android:drawableLeft="@drawable/mzhanghao"
+        android:drawablePadding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:inputType="textPassword"
+        android:textColor="@color/login_in"
+        android:textSize="16sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:textColorHint="#8bd2f7"
+        android:hint="密码"
+        android:drawableLeft="@drawable/mima"
+        android:drawablePadding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:textSize="22sp"
+        android:textColor="#fff"
+        android:text="登录"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SpeedDemo</string>
+    <string name="token">JLNETMOWEWP</string>
+    <string name="homepage">首页</string>
+    <string name="jijian">下单</string>
+    <string name="dindan">订单</string>
+    <string name="my">我的</string>
+</resources>

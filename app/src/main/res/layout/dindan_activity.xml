@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    >
+    <RelativeLayout
+        android:layout_height="50dp"
+        android:background="@color/login_in"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        >
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:onClick="OnBack"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:text="订单详情"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+         <RelativeLayout
+                android:background="@color/white"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/release_tick"
+                    android:src="@drawable/tick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_toRightOf="@id/release_tick"
+                    android:textColor="@color/tick_in_color"
+                    android:textSize="22sp"
+                    android:text="- - - - -"
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_toRightOf="@+id/release_tick"
+                    android:layout_marginLeft="60sp"
+                    android:id="@+id/accept_tick"
+                    android:src="@drawable/tick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:gravity="center"
+                    android:layout_toRightOf="@id/accept_tick"
+                    android:textColor="@color/tick_in_color"
+                    android:textSize="22sp"
+                    android:text="- - - - -"
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/distribution_tick"
+                    android:layout_marginLeft="60sp"
+                    android:layout_toRightOf="@id/accept_tick"
+                    android:src="@drawable/tick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:gravity="center"
+                    android:layout_toRightOf="@id/distribution_tick"
+                    android:textColor="@color/tick_in_color"
+                    android:textSize="22sp"
+                    android:text="- - - - -"
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/finish_tick"
+                    android:layout_marginLeft="60dp"
+                    android:layout_toRightOf="@+id/distribution_tick"
+                    android:src="@drawable/tick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="提交订单"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/tick_in_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/release_tick"
+                    />
+
+                <TextView
+                    android:id="@+id/accept_text"
+                    android:text="司机接单"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/tick_in_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/accept_tick"
+                    android:layout_toRightOf="@id/release_tick"
+                    android:layout_marginLeft="50dp"
+                    />
+                <TextView
+                    android:id="@+id/distribution_text"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/distribution_tick"
+                    android:textColor="@color/tick_in_color"
+                    android:text="配送中"
+                    android:layout_alignLeft="@+id/distribution_tick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/finish_text"
+                    android:text="完成"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/tick_in_color"
+                    android:layout_below="@+id/finish_tick"
+                    android:layout_alignLeft="@+id/finish_tick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        <TextView
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="16sp"
+            android:text="寄件人信息"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/dindan_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:text="姓名 : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="16sp"
+                    android:text="谭金辉"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/dindan_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:text="电话 : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="16sp"
+                    android:text="13268066136"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <EditText
+                android:textSize="14sp"
+                android:editable="false"
+                android:paddingLeft="15dp"
+                android:drawablePadding="15dp"
+                android:textColorHint="@color/login_up"
+                android:drawableLeft="@drawable/biaoji_blue"
+                android:textColor="@color/login_up"
+                android:hint="广州市白云区钟落潭镇广东机电职业技术学院"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="16sp"
+            android:text="收件人信息"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/dindan_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:text="姓名 : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="16sp"
+                    android:text="李白"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/dindan_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:text="电话 : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="16sp"
+                    android:text="13268066136"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <EditText
+                android:textSize="14sp"
+                android:editable="false"
+                android:paddingLeft="15dp"
+                android:drawablePadding="15dp"
+                android:textColorHint="@color/orange"
+                android:drawableLeft="@drawable/biaoji_orgent"
+                android:textColor="@color/orange"
+                android:hint="广州市白云区钟落潭镇广东机电职业技术学院"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <TextView
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="16sp"
+            android:text="司机信息"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/dindan_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:text="司机 : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="16sp"
+                    android:id="@+id/driver_name"
+                    android:text="李达康"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View
+                android:layout_marginLeft="15dp"
+                android:background="@color/backgroundColor"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></View>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/dindan_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:text="电话 : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="16sp"
+                    android:text="13268066136"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View
+                android:layout_marginLeft="15dp"
+                android:background="@color/backgroundColor"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></View>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/car_numbel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:text="车牌 : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="16sp"
+                    android:text="京 NB0001"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View
+                android:background="@color/backgroundColor"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></View>
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/dindan_weizi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#ff4831"
+                        android:text="司机位置"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View
+                    android:background="@color/backgroundColor"
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"></View>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/dindan_call_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/login_up"
+                        android:text="呼叫司机"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="16sp"
+            android:text="订单信息"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/dindan_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:text="订单编号 : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="16sp"
+                    android:text="201703140312"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View
+                android:layout_marginLeft="15dp"
+                android:background="@color/backgroundColor"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></View>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/dindan_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:text="下单日期 : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="16sp"
+                    android:text="2017年4月23  13:50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View
+                android:layout_marginLeft="15dp"
+                android:background="@color/backgroundColor"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></View>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/dindan_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:text="货物类型 : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="16sp"
+                    android:text="人民币5000万"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/dindan_jiage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:text="支付价格 : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="16sp"
+                    android:text="600"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/price_name_title"
+            android:text="寄货人："
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/price_name"
+            android:text="谭金辉"
+            android:layout_toRightOf="@+id/price_name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginRight="15dp"
+            android:text="15015322604"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </RelativeLayout>-->
+
+    <!--<EditText
+        android:textSize="14sp"
+        android:editable="false"
+        android:paddingLeft="15dp"
+        android:drawablePadding="15dp"
+        android:textColorHint="@color/login_up"
+        android:drawableLeft="@drawable/biaoji_blue"
+        android:textColor="@color/login_up"
+        android:hint="广州市白云区钟落潭镇广东机电职业技术学院"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/price_in_name_title"
+            android:text="收货人："
+            android:layout_marginLeft="45dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/price_in_name"
+            android:text="谭金辉"
+            android:layout_toRightOf="@+id/price_in_name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginRight="15dp"
+            android:text="15015322604"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:textSize="14sp"
+        android:editable="false"
+        android:paddingLeft="15dp"
+        android:drawablePadding="15dp"
+        android:textColorHint="@color/orange"
+        android:drawableLeft="@drawable/biaoji_orgent"
+        android:textColor="@color/orange"
+        android:hint="广州市白云区钟落潭镇广东机电职业技术学院"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+
+
+</LinearLayout>

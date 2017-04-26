@@ -1,0 +1,21 @@
+<resources>
+
+    <style name="Select">
+        <item name="android:codes">@color/black1</item>
+        <item name="android:radius">10dp</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <!-- AppCompatEditText默认状态状态设置底线颜色 -->
+        <item name="colorControlNormal">#00ffffff</item>
+        <!-- AppCompatEditText选择的底线颜色 -->
+        <item name="colorControlActivated">#8bd2f7</item>
+    </style>
+    <style name="yanzhema1">
+        <item name="android:color">@color/white</item>
+        <item name="android:solidColor">@color/login_up</item>
+        <item name="android:width">1dp</item>
+    </style>
+
+</resources>

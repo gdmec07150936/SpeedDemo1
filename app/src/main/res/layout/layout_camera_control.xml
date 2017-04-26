@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="22.5dp"
+    android:paddingRight="22.5dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingTop="10dp"
+            android:textSize="20sp"
+            android:textColor="#8bd2f0"
+            android:text="选择取件时间"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/quding"
+            android:textColor="#8bd2f0"
+            android:textSize="14sp"
+            android:text="确认"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/quxiao"
+            android:textSize="14sp"
+            android:textColor="#8a8a8a"
+            android:text="取消"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="64dp"
+            android:layout_alignParentTop="true"
+             />
+    </RelativeLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <com.example.administrator.speeddemo.mView.TextColorNumberPicker
+                android:layout_weight="1"
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+            <com.example.administrator.speeddemo.mView.TextColorNumberPicker
+                android:layout_weight="1"
+                android:id="@+id/hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+            <com.example.administrator.speeddemo.mView.TextColorNumberPicker
+                android:layout_weight="1"
+                android:id="@+id/points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+    </LinearLayout>
+
+</LinearLayout>

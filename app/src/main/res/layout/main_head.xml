@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+     >
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/shaoma1"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:textSize="12sp"
+            android:text="扫一扫"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:background="@drawable/shape"
+        android:drawableLeft="@drawable/shousuo1"
+        android:drawablePadding="5dp"
+        android:hint="搜索"
+        android:padding="5dp"
+        android:textColorHint="#ffffff"
+        android:editable="false"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/xingxiImage"
+            android:src="@drawable/xingxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="12sp"
+            android:text="信息"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xingxiImage"
+             />
+    </RelativeLayout>
+
+
+
+</LinearLayout>
